@@ -20,6 +20,7 @@
 
         return this.each(function () {
 
+            
             // navbar toggler
             navbarToggler.on('click', function () {
                 navToggler.toggleClass('active');

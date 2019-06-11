@@ -12,6 +12,7 @@
     <link rel="icon" href="images/logo.png">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </head>
 
@@ -44,11 +45,11 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="index.html">Portfolio</a></li>
-                                <li><a href="index.html">Resume</a></li>
-                                <li><a href="index.html">Contact</a></li>
+                                <li><a href="#home-nav" class="active">Home</a></li>
+                                <li><a href="#about-nav">About</a></li>
+                                <li><a href="#portfolio-nav">Portfolio</a></li>
+                                <li><a href="#resume-nav">Resume</a></li>
+                                <li><a href="#contact-nav">Contact</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -57,21 +58,39 @@
             </div>
         </div>
     </header>
-    <!-- Header Area End -->
 
-    <section class="welcome-area">
+    <section class="welcome-area" id="home-nav">
         <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(images/hero_2.JPG);">
-                
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(images/my_face.JPG);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12">
+                            <div class="welcome-text text-left">
+                                <div class="row">
+                                    <img data-animation="fadeInUp" data-delay="300ms" src="images/logoO.png" alt="" style="height: 112px; width: auto;">
+                                    <h2 data-animation="fadeInUp" data-delay="300ms">liver</h2>
+                                </div>
+                                <div class="row">
+                                    <img data-animation="fadeInUp" data-delay="300ms" src="images/logoT.png" alt="" style="height: 112px; width: auto; padding-left: 15px">
+                                    <h2 data-animation="fadeInUp" data-delay="300ms">rad</h2>
+                                </div> 
+                                <h6 data-animation="fadeInUp" data-delay="300ms">I'm a software developer & UX UI Designer from Brisbane</h6> 
+                                <div>
+                                    <a href="#about-nav" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">What I Do</a>
+                                </div>
+                                                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>     
         </div>
     </section>
 
-    <section class="about-us-countdown-area" style="padding-top: 100px; padding-bottom: 100px;" id="about">
+    <section class="about-us-countdown-area" id="about-nav" style="padding-top: 100px; padding-bottom: 100px;">
         <div class="container">
             <div class="">
-                <!-- About Content -->
 
                 <div class="col-md-12">
                   <h1 class="wow fadeInUp" data-wow-delay="300ms" id="aboutme">Artistic Developmental Design</h1>
@@ -113,14 +132,14 @@
                 </div>              
 
                 <div class="col-12 col-md-6 align-items-left">
-                        <a href="#" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Download Resume<i class="icon_download"></i></a>
+                        <a href="Resume.PDF" download="Resume.PDF" class="btn confer-btn wow fadeInUp" data-wow-delay="300ms">Download Resume<i class="icon_download"></i></a>
                     
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="our-ticket-pricing-table-area portfolio-background jarallax" style="background-image: url(images/computer_cup.PNG); padding-top: 100px; padding-bottom: 100px;">
+    <section class="our-ticket-pricing-table-area portfolio-background jarallax" id="portfolio-nav" style="background-image: url(images/computer_cup.PNG); padding-top: 100px; padding-bottom: 100px;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -175,7 +194,167 @@
         </div>
     </section>
 
+    <section class="about-us-countdown-area" id="resume-nav" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="col-md-12">
+              <h1 class="wow fadeIn" data-wow-delay="300ms" id="aboutme">Resume</h1>
+            </div>
+            <div class="wow fadeIn col-md-12 dash" data-wow-delay="300ms"></div>
+            <div class="col-12 text-center" style="margin-top: 30px;">
+                <a href="Resume.PDF" download="Resume.PDF" class="btn confer-btn wow fadeIn" data-wow-delay="300ms">Download Resume<i class="icon_download"></i></a>     
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wow fadeIn text-center" data-wow-delay="300ms" style="margin-bottom: 20px;"><h1>Experience</h1></div>              
+                    <div class="col-12 wow fadeIn addBox" data-wow-delay="300ms"">
+                        <div class="service">
+                            <p style="color: grey;"><i class="icon_calendar"></i> 2019</p>
+                            <h3 style="margin-top: 15px; color: #05EDFF">Web Development and Bar Staff</h3>           <p style="margin-top: 0px;">My time spent at the Warana Hotel Motel involved full development of their company website utilising bootstrap, owl carousels and other JavaScript methods. All graphic design and photography were also completed as part of the website. Development is on going however preliminary versions can be viewed here: <a href="https://oliver-t.github.io/waranahotel.github.io/" target="_blank" style="color: #05EDFF">Warana Hotel</a></p>
+                            <h4 style="margin-top: 15px; font-weight: normal;">Warana Hotel</h4>
+                        </div>                      
+                    </div>  
+
+                    <div class="col-12 wow fadeIn addBox" data-wow-delay="300ms"">
+                        <div class="service">
+                            <p style="color: grey;"><i class="icon_calendar"></i> 2018</p>
+                            <h3 style="margin-top: 15px; color: #05EDFF">Mobile Application Design</h3>
+                            <p style="margin-top: 0px;">University course involving client communication to build a mobile application. My role involved UX/UI design compliant to the clients and the user’s needs. Graphical design of the application, logo’s and extra material such as brochure and accompanying website. Data base population and minutes of our fortnightly client meetings. Course grade: 7 </p>
+                            <h4 style="margin-top: 15px; font-weight: normal;">University Course</h4>
+                        </div>                      
+                    </div>
+
+                    <div class="col-12 wow fadeIn addBox" data-wow-delay="300ms"">
+                        <div class="service">
+                            <p style="color: grey;"><i class="icon_calendar"></i> 2018</p>
+                            <h3 style="margin-top: 15px; color: #05EDFF">Graphic Design</h3>
+                            <p style="margin-top: 0px;">Existing brochure information and design were taken and redesigned to incorporate a more modern style and increase clarity and usability. Business cards were then developed under the same style.<br>Reference: Angela Rule – Humanitas CEO – 0434 418 934 </p>
+                            <h4 style="margin-top: 15px; font-weight: normal;">Humanitas</h4>
+                        </div>                      
+                    </div>              
+                </div>
+
+                <div class="col-md-6">
+                    <div class="wow fadeIn text-center" data-wow-delay="300ms" style="margin-bottom: 20px;"><h1>Education</h1></div>              
+                    <div class="col-12 wow fadeIn addBox" data-wow-delay="300ms"">
+                        <div class="service">
+                            <p style="color: grey;"><i class="icon_calendar"></i> 2018</p>
+                            <h3 style="margin-top: 15px; color: #05EDFF">Bachelor of Computer Science</h3>
+                            <p style="margin-top: 0px;">Studies included program writing in several different languages, UX/UI design and multi-media development such as websites and mobile applications.</p>
+                            <ul style="padding-left: 15px;">
+                                <li>Effective Public Speaking and Presentation</li>
+                                <li>Team Management and Leadership </li>
+                                <li>Team Development</li>
+                                <li>Design Strategy </li>
+                                <li>Team and Client Communication </li>
+                                <li>Project Organisation and Development </li>
+                                <li>Changing Stress to Performance </li>
+                                <li>User Testing </li>
+                                <li>Unit Testing </li>
+                                <li>Document Writing </li>
+                            </ul>
+                            <h4 style="margin-top: 15px; font-weight: normal;">University of Queensland</h4>
+                        </div>                      
+                    </div>               
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-our-area portfolio-background jarallax" id="contact-nav" style="background-image: url(images/cayde.JPG); padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="col-md-12">
+              <h1 class="wow fadeIn" data-wow-delay="300ms" id="aboutme">Contact</h1>
+            </div>
+            <div class="wow fadeIn col-md-12 dash" data-wow-delay="300ms"></div>
+        
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-12 col-sm-8">
+                        <!-- Contact Form -->
+                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_form">
+                            <form action="mailto:olivertrad@gmail.com" method="post" enctype="text/plain" id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row">
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="First Name" id="name" placeholder="Your Name">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="Last Name" id="name2" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="phone" id="subject" placeholder="Your Number">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Your Message *"></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn confer-btn">Send Message <i class="icon_mail"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p style="color: black;">Address:</p>
+                            <h6>455 Honour Ave Sherwood</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p style="color: black;">Phone:</p>
+                            <h6>0479 081 962</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p style="color: black;">Email:</p>
+                            <h6>olivertrad@gmail.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer style="padding: 20px 0 20px 0; background-color: black">
+        <div class="container">
+            <div class="row">
+                <div style="margin-left: 50%; position: relative; transform:translateX(-50%);">
+                    <a href="./index.html"><img src="images/logo.png" alt="OT Logo" style="max-width: 80px;"></a>
+
+                
+            </div>
+            
+        </div>
+    </footer>
+
     <!-- **** All JS Files ***** -->
+    <script src="js/main.js"></script>
     <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
