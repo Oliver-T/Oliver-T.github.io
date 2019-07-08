@@ -1,6 +1,7 @@
 @import url(bootstrap.min.css);
 @import url(classy-nav.css);
 @import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
 @import url(icons.css);
 @import url(animate.css);
 
@@ -608,4 +609,11 @@ h6 {
           font-size: 14px; } }
 .single-contact-info p{
   color: black;
+}
+
+.owl-carousel .item{
+  margin: 3px;
+}
+.owl-carousel .item img{
+  
 }
